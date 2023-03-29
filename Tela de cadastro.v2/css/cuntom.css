@@ -1,0 +1,49 @@
+h5 {color: rgb(255, 255, 255);} 
+.bg{
+    background-image: url(../img/plano-fundo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    
+}
+.cabeçario{
+    background-color:  #c60e1a;
+    padding: 0px;
+    text-align: left;
+    width: 100%;
+}
+    
+header {
+    position: static;
+     top: 0;
+    left: 0;
+    width: 50;
+    z-index: 600px;
+    margin-top: -20px;}
+.formulario { 
+    width: 50%;
+    margin: 8px 4px;
+    display: inline-block;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #c60725;
+    padding: 20px; 
+    margin-left: 25vw;
+    
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #f02e2e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; }
+    input[type=submit]:hover {
+        background-color: #f02e2e;}
+.borda-imagem {
+    border-radius: 5%;  
+}
+h4 {color: whitesmoke;}
+.cl {color: whitesmoke;}
