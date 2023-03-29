@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/custom.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css">
+   
+    <title>desafio</title>
+</head>
+<body class="bg"> 
+<header>
+        <div class="cabeçario">
+        <h5><a href="https://www.telecall.com" class="cl"><img src="img/2logo-telecall.jpg" class="borda-imagem" alt="logo-telecall" width="25"
+            height="25" class="circle"> Telecall</a></h5>
+      </div>
+</header>
+<div class="container"> 
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+    <div class="content">
+        <div id="login">
+        <form class="formulario" method="post" action=""> 
+            <img src="img/telecall.png" alt="logo-telecall" class="meio"  width="300">
+          <h1 class="cl">área do cliente:
+          </h1> 
+          <p> 
+            <label class="cl" for="nome_login" >login:</label>
+            <input onkeypress="return ApenasLetras(event,this);" required maxlength="6" class="cl" id="nome_login" name="nome_login" required="required" type="text" />
+          </p>
+           
+          <p> 
+            <label class="cl" for="senha" >senha:</label>
+            <input class="cl" onkeypress="return ApenasLetras(event,this);"  required maxlength="8"id="senha" name="email_login" required="required" type="password"  /> 
+          </p>
+           
+          <p> 
+            <input type="submit" value="Logar" /> 
+          </p>
+           
+          <p class="link" > 
+            Ainda não tem conta?
+            <a href="#paracadastro" class="link" >Cadastre-se</a>
+          </p>
+        </form>
+        </div>
+
+
+
+    <div id="cadastro"><form method="post" action="" class="formulario" autocomplete="on">
+    
+    <h1 class="cl"><img src="img/telecall.png" alt="telecall" 
+        class="responsive-img  "> <br> bem vindo(a) </h1><hr>
+    <label for="text" class="cl"> login: 
+        <input maxlength="8" class="cl" onkeypress="return ApenasLetras(event,this);" type="text" name="log" required >
+    </label> <br> 
+     <label class="cl form-label" for="pwd">senha:
+        <input class="cl" onkeypress="return ApenasLetras(event,this);" required maxlength="8" type="password" name="senha" id="password">
+    <label for="confirmar senha" class="cl">confirmar senha:
+        <input type="password" onkeypress="return ApenasLetras(event,this);" required maxlength="8" required class="cl" name="comfirma  senha" id="confirm_password">
+    </label>
+    </label><br>
+    <label class="cl" for="fname">seu nome:
+        <input minlength="15" onkeypress="return ApenasLetras(event,this);" maxlength="60" class="cl" required type="text" name="nome" id="fname">
+    </label><br>
+    <label for="nome-mae" class="cl">nome da mãe:
+        <input  minlength="15" onkeypress="return ApenasLetras(event,this);" maxlength="60"  type="text" class="cl" name="mae">
+    </label> <br>
+    <label class="cl" for="email">qual e seu email?
+        <input class="cl"  required type="email" id="email" name="email">
+    </label><br>
+    <label  class="cl" for="tel">Telefone: 
+         <input class="cl"  onkeypress='return onlynumber();' onabort="val();" required  type="tel" maxlength="15" id="telefone" class="input-padrao"  placeholder="+55(00) 00000-0000">
+    </label><br>
+    <label class="cl" for="doc">qual e seu cpf? 
+        <input class="cl"   required type="text" maxlength="11" id="cpf" name="cpf" placeholder="Ex.: 000.000.000-00" >
+    </label><br>
+    <label class="cl">qual e o seu Cep:
+        <input name="cep" required type="text" id="cep" value="" size="10" maxlength="9"
+    onblur="pesquisacep(this.value);" /></label><br />
+    <label class="cl">Rua:
+        <input  name="rua" class="cl" type="text" id="rua" size="60" /></label><br />
+    <label class="cl">Bairro:
+        <input class="cl" name="bairro" type="text" id="bairro" size="40" /></label><br />
+    <label class="cl">Cidade:
+        <input  class="cl" name="cidade" type="text" id="cidade" size="40" /></label><br />
+    <label class="cl">Estado:
+        <input class="cl" name="uf" type="text" id="uf" size="2" /></label><br />
+    <label class="cl">numero da casa:
+        <input class="cl" name="numero-casa" type="text" id="numero-casa" size="8" required />
+    </label><br />
+    <label for="complemento"  class="cl"> complemento:
+        <input  type="textarea" name="complemento" id="complemento"  >
+    </label><br>
+        </p> 
+    <input type="submit" value="cadastra"> <br>
+    <p class="link">
+        você ja é cliente?
+    
+    <a href="#paralogin" id="topo" class="tamanho link ">  área do cliente </a>
+    </p>
+    </form>
+</div>
+</div>
+</div>
+
+
+<script type="text/javascript" src="java/jquery-3.6.min.js"></script>
+<script type="text/javascript" src="java/scripts.js"></script>
+</body>
+</html>
